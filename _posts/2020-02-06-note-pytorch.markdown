@@ -1,8 +1,9 @@
+---
 layout: page
 title: "Note on PyTorch"
 date: 2020-02-06 00:00:00 -0000
 categories: DeepLearning PyTorch
-
+---
 # Comment on regression example
 ## functions
 - unsqueeze, un-squeeze add a dimension at a specified position
