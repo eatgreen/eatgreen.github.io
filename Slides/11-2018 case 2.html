@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>11-2018 case 2</title>
+</head>
+<body>
+<h1 id="112018-case-2">11/2018 case 2</h1>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Observations Configurations</th>
+	<th style="text-align:left;">Reduced</th>
+	<th style="text-align:left;">Toy</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">Synthetic velocity grid</td>
+	<td style="text-align:left;">73x73x6</td>
+	<td style="text-align:left;">17x17x3</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Particle number</td>
+	<td style="text-align:left;">7000, 8500</td>
+	<td style="text-align:left;">500</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Time separation</td>
+	<td style="text-align:left;">0.5</td>
+	<td style="text-align:left;">0.5</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Image size</td>
+	<td style="text-align:left;">256x256</td>
+	<td style="text-align:left;"></td>
+</tr>
+<tr>
+	<td style="text-align:left;">ppp level</td>
+	<td style="text-align:left;" colspan="2">0.1</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Evaluation grid</th>
+	<th style="text-align:left;"></th>
+	<th style="text-align:left;"></th>
+	<th style="text-align:left;"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">Reconstructed grid</td>
+	<td style="text-align:left;">5x5x2</td>
+	<td style="text-align:left;">10x10x2</td>
+	<td style="text-align:left;">19x19x2</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Overlapping ratio 0.5</td>
+	<td style="text-align:left;">9x9x3</td>
+	<td style="text-align:left;">19x19x3</td>
+	<td style="text-align:left;">37x37x3</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Overlapping ratio 0.25</td>
+	<td style="text-align:left;">17x17x5</td>
+	<td style="text-align:left;">37x37x5</td>
+	<td style="text-align:left;">73x73x5</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="evaluation">Evaluation</h2>
+
+<ul>
+<li>Particle images are created by projecting particles in object space transporting by <em>synthetic velocity grid</em>.</li>
+<li>We check horizontal velocity for difference <strong>depth z</strong>.</li>
+<li>Reference velocity is obtained by interpolating the synthetic velocity on grid 73x73x6 to reconstructed coarser grid.</li>
+<li>Background velocity is constant.</li>
+</ul>
+
+<h2 id="mean-error">Mean error</h2>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Original grid</th>
+	<th style="text-align:left;">17x17x3</th>
+	<th style="text-align:left;"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">Reconstructed grid</td>
+	<td style="text-align:left;">5x5x2</td>
+	<td style="text-align:left;">17x17x5 (ol 0.25)</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Initial velocity mean error</td>
+	<td style="text-align:left;">0.115492</td>
+	<td style="text-align:left;">0.114562</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Final velocity mean error</td>
+	<td style="text-align:left;">0.003112</td>
+	<td style="text-align:left;">0.003559</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Initial Particle mean error</td>
+	<td style="text-align:left;">0.155302</td>
+	<td style="text-align:left;">0.155266</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Final Particle mean error</td>
+	<td style="text-align:left;">0.012661</td>
+	<td style="text-align:left;">0.006761</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Original grid</th>
+	<th style="text-align:left;">73x73x6</th>
+	<th style="text-align:left;"></th>
+	<th style="text-align:left;"></th>
+	<th style="text-align:left;"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">Reconstructed grid</td>
+	<td style="text-align:left;">5x5x2</td>
+	<td style="text-align:left;">17x17x5 (ol 0.25)</td>
+	<td style="text-align:left;">19x19x2</td>
+	<td style="text-align:left;">73x73x5 (ol 0.25)</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Initial velocity mean error</td>
+	<td style="text-align:left;">0.132254</td>
+	<td style="text-align:left;">0.115056</td>
+	<td style="text-align:left;">0.123239</td>
+	<td style="text-align:left;">0.120239</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Final velocity mean error</td>
+	<td style="text-align:left;">0.026315</td>
+	<td style="text-align:left;">0.026029</td>
+	<td style="text-align:left;">0.013417</td>
+	<td style="text-align:left;">0.014291</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Initial Particle mean error</td>
+	<td style="text-align:left;">0.169632</td>
+	<td style="text-align:left;">0.171296</td>
+	<td style="text-align:left;">0.168137</td>
+	<td style="text-align:left;">0.168770</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Final Particle mean error</td>
+	<td style="text-align:left;">0.061931</td>
+	<td style="text-align:left;">0.040047</td>
+	<td style="text-align:left;">0.033041</td>
+	<td style="text-align:left;">0.021126</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="17x17x3-toy-model-with-500-particles">17x17x3 Toy model with 500 particles</h2>
+
+<h3 id="results-5x5x2-no-overlap">Results 5x5x2 no overlap</h3>
+
+<h3 id="results-17x17x5-overlap-75">Results 17x17x5 overlap 75%</h3>
+
+<ul>
+<li>velocity</li>
+<li><img src="/Users/yin.yang/Dropbox/TechniqueNotes/Slides/2_17173_17175_velo.png" alt="" /></li>
+<li>error</li>
+<li><img src="/Users/yin.yang/Dropbox/TechniqueNotes/Slides/2_17173_17175_err.png" alt="" /></li>
+</ul>
+
+<h2 id="73x73x6-reduced-model">73x73x6 Reduced model</h2>
+
+<h3 id="results-5x5x2-no-overlap-7000552=140">Results 5x5x2 no overlap. 7000/(5*5*2)=140</h3>
+
+<h4 id="results-17x17x5-overlap-75">Results 17x17x5 overlap 75%</h4>
+
+<ul>
+<li>velocity</li>
+<li><img src="/Users/yin.yang/Dropbox/TechniqueNotes/Slides/2_73736_17175_velo.png" alt="" /></li>
+<li>error</li>
+<li><img src="/Users/yin.yang/Dropbox/TechniqueNotes/Slides/2_73736_17175_err.png" alt="" /></li>
+</ul>
+
+<h3 id="results-19x19x2-no-overlap-7000-700019192=969">Results 19x19x2 no overlap, 7000, 7000/(19*19*2)=9.69</h3>
+
+<ul>
+<li>velocity</li>
+<li><img src="/Users/yin.yang/Dropbox/TechniqueNotes/Slides/2_73736_19192_velo.png" alt="" /></li>
+<li>error</li>
+<li><img src="/Users/yin.yang/Dropbox/TechniqueNotes/Slides/2_73736_19192_err.png" alt="" /></li>
+</ul>
+
+<h3 id="results-19x19x2-no-overlap-8500-850019192=1177">Results 19x19x2 no overlap, 8500, 8500/(19*19*2)=11.77</h3>
+
+<ul>
+<li>velocity</li>
+<li><img src="/Users/yin.yang/Dropbox/TechniqueNotes/Slides/2_73736_19192_8500_velo.png" alt="" /></li>
+<li>error</li>
+<li><img src="/Users/yin.yang/Dropbox/TechniqueNotes/Slides/2_73736_19192_8500_err.png" alt="" /></li>
+</ul>
+
+<h4 id="results-73x73x5-overlap-75-8500">Results 73x73x5 overlap 75%, 8500</h4>
+
+<ul>
+<li>velocity</li>
+<li><img src="/Users/yin.yang/Dropbox/TechniqueNotes/Slides/2_73736_73735_8500_velo.png" alt="" /></li>
+<li>error</li>
+<li><img src="/Users/yin.yang/Dropbox/TechniqueNotes/Slides/2_73736_73735_8500_err.png" alt="" /></li>
+</ul>
+</body>
+</html>

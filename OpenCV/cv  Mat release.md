@@ -1,0 +1,1 @@
+if reuse variable of cv::Mat, for eamaple, reassign its values, the vatiable must be released of memory before the next use.

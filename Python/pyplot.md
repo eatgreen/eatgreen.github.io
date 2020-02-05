@@ -1,0 +1,1 @@
+np.arange(init, end, step)

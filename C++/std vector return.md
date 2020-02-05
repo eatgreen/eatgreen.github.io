@@ -1,0 +1,1 @@
+std vector can be returned by reference as long as const, see MPIDOM.cpp for exmaple.

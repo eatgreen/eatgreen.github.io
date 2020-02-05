@@ -1,0 +1,1 @@
+1. use target_compile_options, target_link_libraries and set_target_properties instead of linker_flags

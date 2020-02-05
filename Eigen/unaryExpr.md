@@ -1,0 +1,1 @@
+Apply a unary operator coefficient-wise.

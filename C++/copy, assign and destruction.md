@@ -1,0 +1,1 @@
+Objects are destroyed when they cease to exist, exit from a local block in which it was created.

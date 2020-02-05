@@ -1,0 +1,1 @@
+..#PBS -N HelloMPI_OMP #PBS -q np#PBS -l EC_total_tasks=30#PBS -l EC_threads_per_task=3#PBS -l EC_memory_per_task=3GB#PBS -l EC_hyperthreads=2...export OMP_NUM_THREADS=$EC_threads_per_taskaprun -N $EC_tasks_per_node -n $EC_total_tasks \-d $EC_threads_per_task -j $EC_hyperthreads ./HelloMPI_OMP ...

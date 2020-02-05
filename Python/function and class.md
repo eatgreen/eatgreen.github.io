@@ -1,0 +1,1 @@
+class: related function which exerts on the same data.

@@ -1,0 +1,1 @@
+###the struct is initialized, then going to the test_case.

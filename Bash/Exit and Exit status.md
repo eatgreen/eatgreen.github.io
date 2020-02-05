@@ -1,0 +1,1 @@
+exit returns 0 when succesful, non zero is error code.

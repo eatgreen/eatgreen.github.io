@@ -1,0 +1,5 @@
+The D-EVIL data assimilation algorithm (Auligné et al, 2016), a deterministic ensemble-variational integrated localized method, has been fully integrated into the NEMOVAR system. This strategy allows a light-weight computation of a posterior ensemble which is consistent with the variational data assimilation scheme. More precisely, the D-EVIL can effectively use the Ritz informations readily available as a byproduct of the existing B-PCG and Restricted B-PCG minimization schemes in NEMOVAR. Besides the implementation of main functions in regenerating the ensemble, extensive diagnosis functions are also tested in order to evaluate both the convergence issues and the characteristics of the posterior ensemble.
+
+In addition to the on-line diffusion tensor estimation/filtering scheme already implemented in NEMOVAR, an interface to the off-line diagnosis tools by Ménétrier has been established in order to evaluate and compare conveniently the different B definition schemes.
+
+Collaboration between Y. Yang and E. Mémin (Inria Renne) on an enhanced 4DEnVar combined with stochastic parameterized dynamics also yields a paper under revision phase for journal Tellus A.

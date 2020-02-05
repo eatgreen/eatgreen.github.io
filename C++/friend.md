@@ -1,0 +1,1 @@
+friend function can access non public members.
