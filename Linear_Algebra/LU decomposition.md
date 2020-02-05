@@ -1,1 +1,0 @@
-$A=LU$, $U$ is the upper triangular matrix in Gauss elimination. 

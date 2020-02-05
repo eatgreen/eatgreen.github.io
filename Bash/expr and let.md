@@ -1,1 +1,0 @@
-let command carries out arithmetic operations on variables

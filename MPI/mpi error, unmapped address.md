@@ -1,1 +1,0 @@
-usually we do not allocate the variable for slave processors.

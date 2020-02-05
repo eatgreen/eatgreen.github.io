@@ -1,1 +1,0 @@
-The case when all the coefficients are real is when the signal is real and even.

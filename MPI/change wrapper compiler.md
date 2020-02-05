@@ -1,1 +1,0 @@
-sudo vi /opt/local/share/openmpi-mp/openmpi/mpic++-wrapper-data.txt

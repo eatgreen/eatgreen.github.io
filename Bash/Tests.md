@@ -1,3 +1,0 @@
-Test constructs
-[[...]] extended test command
-((...)) and let ... 

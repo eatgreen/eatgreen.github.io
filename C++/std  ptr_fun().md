@@ -1,1 +1,0 @@
-returns an object of type pointer_to_unary_function.

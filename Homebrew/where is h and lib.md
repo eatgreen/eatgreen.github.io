@@ -1,1 +1,0 @@
-homebrew install things in /usr/local/Cellar, but creat symbol links to /usr/local/lib

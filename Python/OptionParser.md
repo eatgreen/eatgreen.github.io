@@ -1,1 +1,0 @@
-Getting options for the script.

@@ -1,1 +1,0 @@
-1 'represents' stdout and 2 stderr.

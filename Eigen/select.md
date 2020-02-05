@@ -1,1 +1,0 @@
-a2=(a2.array()<da2.array()).select((a2.array()*a2.array()/da2.array()+da2.array())*0.5,a2);

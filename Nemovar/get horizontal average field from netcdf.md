@@ -1,1 +1,0 @@
-ncwa -a x,y -v K11 Bmod_cor_mod1_wri_t.nc ~/K11_t_ens_avg.nc

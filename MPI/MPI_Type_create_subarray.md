@@ -1,1 +1,0 @@
-MPI_Scatterv can not scatter submatrix to different process of different sizes. The thing is the type is not an array, therefore can only take the type defined at rank root
