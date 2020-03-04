@@ -43,21 +43,21 @@ Yang, Y., Robinson, C., Heitz, D., & Mémin, E. (2014). A variational ensemble s
 
 #### Ensemble Variational Data Assimilation System
 
-- website: \href{http://bitbucket.org/eatgreen/envar}{http://bitbucket.org/eatgreen/envar}
+- website: [http://bitbucket.org/eatgreen/envar](http://bitbucket.org/eatgreen/envar)
 - Objective of the software: This software implements the EnVar method in [Yang et al.,2015, Yang & Mémin, 2017], used for data assimilation in geophysics and fluid dynamics applications. This software is a library that can be readily integrated with any fluid dynamical models.
 - Users community: Fluid dynamics research and industrial.
 - Size: 5000 lines written in C++, parallel computing enabled by OpenMPI.
 
 #### En2EM, Ensemble$^2$-EM lib for physical parameter estimation
 
-- Website: \href{http://bitbucket.org/eatgreen/en2em}{http://bitbucket.org/eatgreen/en2em}
+- Website: [http://bitbucket.org/eatgreen/en2em](http://bitbucket.org/eatgreen/en2em)
 - Objective of the software: This software implements the En2EM method proposed in paper [Yang & Mémin, 2019], used for dynamical model learning and state estimation in geophysics and fluid dynamics applications. This software is a library that can be readily integrated with any fluid dynamical models. Besides, the expectation step of this software can be replaced by other existing data assimilation approach. 
 - Users community: Geophysical community and fluid dynamics community.
 - 10000 lines written in Matlab. 
 
 #### KLPT/LAPIV, Kernelized Lagrangian Particle Tracking/Lagrangian PIV
 
-- website: \href{http://bitbucket.org/eatgreen/klpt-lapiv}{http://bitbucket.org/eatgreen/klpt-lapiv}
+- website: [http://bitbucket.org/eatgreen/klpt-lapiv](http://bitbucket.org/eatgreen/klpt-lapiv)
 - Objective of the software: This software implements the kernalized LPT method \cite{Yang18} and the Lagrangian PIV method \cite{Yang19c}. The objective is to reconstruct Eulerian velocity or Lagrangian particle positions from stereographic images. This software is a standalone application but can be also integrated into other projects as a library.
 - Users community: Experiment fluid dynamics and signal processing community.
 - Size: 15000 lines written in C++. Extensive use of OpenCV library. Parallel computing enable by TBB and CUDA. This software also supports PyTorch C++ API. A small portion of code is written in Python for post-processing, visualization and project building.
