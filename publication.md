@@ -10,7 +10,7 @@ Yang, Y., & Mémin, E. (2019). Estimation of physical parameters under location 
 
 Yang, Y., & Mémin, E. (2017). High-resolution data assimilation through stochastic subgrid tensor and parameter estimation from 4DEnVar. Tellus A: Dynamic Meteorology and Oceanography, 69(1), 1308772. [file](https://github.com/eatgreen/eatgreen.github.io/raw/master/data/Yang_Memin_2017_TellusA.pdf)
 
-Yang, Y., Robinson, C., Heitz, D., & Mémin, E. (2015). Enhanced ensemble-based 4DVar scheme for data assimilation. Computers & Fluids, 115, 201-210. [file](https://github.com/eatgreen/eatgreen.github.io/raw/master/data/Yang_el_al_2015_C%26F.pdf)
+Yang, Y., Robinson, C., Heitz, D., & Mémin, E. (2015). Enhanced ensemble-based 4DVar scheme for data assimilation. Computers & Fluids, 115, 201-210. [file](https://github.com/eatgreen/eatgreen.github.io/raw/master/data/Yang_et_al_2015_C%26F.pdf)
 
 ### Conferences
 
